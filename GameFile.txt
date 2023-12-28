@@ -1,13 +1,22 @@
 title Neuro and the lost Tutel
 author Catt0s, Laden, Boop
 homepage https://jam23.catt0s.win/
+zoomscreen 10x10
+debug
+verbose_logging
+
 
 ========
 OBJECTS
 ========
 
-Nil
-black
+Outside
+#000 #214
+01000
+00010
+10000
+00100
+00001
 
 Background
 #112 #121 
@@ -33,6 +42,10 @@ Brick
 00000
 11101
 
+Door
+brown
+
+
 OverGrowth
 #7D3 #4D6
 .0...
@@ -48,6 +61,14 @@ Player
 30003
 .242.
 .656.
+
+Plate
+darkred
+.....
+.0.0.
+..0..
+.0.0.
+.....
 
 Crate
 #865 #975 
@@ -78,15 +99,17 @@ LEGEND
 =======
 
 . = Background
-- = Nil
+- = Outside
 # = Brick
 G = Brick and OverGrowth
 P = Player
 * = Crate
-@ = Crate and Target
+@ = Crate and Plate
+d = Door
 O = Target
 X = Programer and Target
 l = Laptop
++ = Background and Plate
 
 =======
 SOUNDS
@@ -97,10 +120,10 @@ COLLISIONLAYERS
 ================
 
 Background
-Nil
-Target
+Outside
+Target, Plate
 Programer, Laptop
-Player, Crate, Brick
+Player, Crate, Brick, Door
 OverGrowth
 
 ======
@@ -108,6 +131,7 @@ RULES
 ======
 
 [ > Player | Crate ] -> [ > Player | > Crate ]
+late [ Crate Plate | ... | Door ] -> [ Plate | ... | Background ]
 [ Action Player | Crate ] -> [ < Player | < Crate ]
 [ Player Target ] -> [Player] Win
 
@@ -119,24 +143,23 @@ WINCONDITIONS
 =======
 LEVELS
 =======
-
-MESSAGE CONTROLS: SPACE and X (action) to pull obstacles, WASD or arrow keys to move, Z to move back
+MESSAGE CONTROLS: SPACE and X (action) to pull obstacles
 
 MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
-
-#############
-#..G......*.#
-#.*.......*.#
-#**#....***.G
-#..###G##...#
-#..#....#...#
-#..#....##.##
-#.p#..o.....#
-#..#........#
-#..#....G...#
-#############
-
+---------------
+-#############-
+-#..G......*.#-
+-#+*d......*.#-
+-#**#....***.G-
+-#..###G##...#-
+-#..#....#...#-
+-#..#....##.##-
+-#.p#..o.....#-
+-#..#........#-
+-#..#....G...#-
+-#############-
+---------------
 
 MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
 
@@ -149,11 +172,12 @@ MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tute
 
 MESSAGE This one can't code either...
 
-
-..p
-Xl.
+-----
+-..p-
+-Xl.-
+-----
 
 message Ah yes. You take off the femboy's socks and take him with you.
 
 
-MESSAGE Credits: Creator:Catt0s, Sprites:Ladan, Help:Boop
+MESSAGE Credits: Creator:Catt0s  AmazingSprites:Ladan      Help:Boop

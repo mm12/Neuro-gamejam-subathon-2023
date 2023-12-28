@@ -2,6 +2,7 @@ title Neuro and the lost Tutel
 author Catt0s, Laden, Boop
 homepage https://jam23.catt0s.win/
 zoomscreen 10x10
+run_rules_on_level_start
 debug
 verbose_logging
 
@@ -44,6 +45,14 @@ Brick
 
 Door
 brown
+
+OpenDoor
+brown
+0...0
+.....
+.....
+.....
+0...0
 
 
 OverGrowth
@@ -110,6 +119,7 @@ O = Target
 X = Programer and Target
 l = Laptop
 + = Background and Plate
+& = Background and OpenDoor
 
 =======
 SOUNDS
@@ -120,7 +130,7 @@ COLLISIONLAYERS
 ================
 
 Background
-Outside
+Outside, OpenDoor
 Target, Plate
 Programer, Laptop
 Player, Crate, Brick, Door
@@ -131,7 +141,8 @@ RULES
 ======
 
 [ > Player | Crate ] -> [ > Player | > Crate ]
-late [ Crate Plate | ... | Door ] -> [ Plate | ... | Background ]
+late [ Crate Plate | ... | Door ] -> [ Crate Plate | ... | Background OpenDoor ]
+[ Plate No Crate | ... | OpenDoor ] -> [ Plate | ... | Door ]
 [ Action Player | Crate ] -> [ < Player | < Crate ]
 [ Player Target ] -> [Player] Win
 
@@ -150,8 +161,8 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 ---------------
 -#############-
 -#..G......*.#-
--#+*d......*.#-
--#**#....***.G-
+-#+.&......*.#-
+-#*.#....***.G-
 -#..###G##...#-
 -#..#....#...#-
 -#..#....##.##-

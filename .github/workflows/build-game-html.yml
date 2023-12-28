@@ -1,0 +1,6 @@
+jobs:
+  build-game-html:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          node -e "console.log('Hello, world from JavaScript!')"

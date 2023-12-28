@@ -6,8 +6,16 @@ homepage https://jam23.catt0s.win/
 OBJECTS
 ========
 
-Background
+Nil
 black
+
+Background
+#112 #121 
+00000
+00100
+01010
+00100
+00000
 
 Target
 green darkgreen lightgreen #0f0 pink blue white
@@ -18,7 +26,7 @@ green darkgreen lightgreen #0f0 pink blue white
 1.1..
 
 Brick
-#EEF #DDE
+#889 #99A
 11101
 00000
 10111
@@ -70,6 +78,7 @@ LEGEND
 =======
 
 . = Background
+- = Nil
 # = Brick
 G = Brick and OverGrowth
 P = Player
@@ -88,6 +97,7 @@ COLLISIONLAYERS
 ================
 
 Background
+Nil
 Target
 Programer, Laptop
 Player, Crate, Brick
@@ -131,17 +141,11 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
 
 
-...............
-...............
-...............
-#######........
-#o##..##.......
-#.*.*..#.......
-#....*p#.......
-########.......
-...............
-...............
-...............
+#######.
+#o##..##
+#.*.*..#
+#....*p#
+########
 
 MESSAGE This one can't code either...
 

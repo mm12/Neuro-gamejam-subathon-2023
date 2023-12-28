@@ -1,0 +1,155 @@
+title Neuro and the lost Tutel
+author Catt0s, Laden, Boop
+homepage https://jam23.catt0s.win/
+
+========
+OBJECTS
+========
+
+Background
+black
+
+Target
+green darkgreen lightgreen #0f0 pink blue white
+.....
+.....
+000..
+0002.
+1.1..
+
+Brick
+#EEF #DDE
+11101
+00000
+10111
+00000
+11101
+
+OverGrowth
+#7D3 #4D6
+.0...
+..1..
+..0..
+.1.0.
+...1.
+
+Player
+#FEE #E35 #FE9 #B98 #4CC #9FF #6FF #6BE
+.333.
+17071
+30003
+.242.
+.656.
+
+Crate
+#865 #975 
+00000
+01110
+01110
+01110
+00000
+
+Programer 
+pink white blue 
+.....
+.....
+.....
+0.1..
+1.2..
+
+Laptop
+black darkgray #555 #888
+....1
+....1
+....1
+.3331
+11112
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Brick
+G = Brick and OverGrowth
+P = Player
+* = Crate
+@ = Crate and Target
+O = Target
+X = Programer and Target
+l = Laptop
+
+=======
+SOUNDS
+=======
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Target
+Programer, Laptop
+Player, Crate, Brick
+OverGrowth
+
+======
+RULES
+======
+
+[ > Player | Crate ] -> [ > Player | > Crate ]
+[ Action Player | Crate ] -> [ < Player | < Crate ]
+[ Player Target ] -> [Player] Win
+
+==============
+WINCONDITIONS
+==============
+
+
+=======
+LEVELS
+=======
+
+MESSAGE CONTROLS: SPACE and X (action) to pull obstacles, WASD or arrow keys to move, Z to move back
+
+MESSAGE Nwero has lost Tutel. Help her find the one that can code!
+
+
+#############
+#..G......*.#
+#.*.......*.#
+#**#....***.G
+#..###G##...#
+#..#....#...#
+#..#....##.##
+#.p#..o.....#
+#..#........#
+#..#....G...#
+#############
+
+
+MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
+
+
+...............
+...............
+...............
+#######........
+#o##..##.......
+#.*.*..#.......
+#....*p#.......
+########.......
+...............
+...............
+...............
+
+MESSAGE This one can't code either...
+
+
+..p
+Xl.
+
+message Ah yes. You take off the femboy's socks and take him with you.
+
+
+MESSAGE Credits: Creator:Catt0s, Sprites:Ladan, Help:Boop

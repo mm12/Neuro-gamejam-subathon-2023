@@ -1,7 +1,6 @@
 title Neuro and the lost Tutel
 author Catt0s, Lådan, Boop
 homepage https://jam23.catt0s.win/
-flickscreen 10x10
 run_rules_on_level_start
 debug
 verbose_logging
@@ -197,6 +196,46 @@ WireU
 .....
 .....
 
+CWire
+lightred
+.....
+.....
+..0..
+.....
+.....
+
+DWire
+lightred
+.....
+.....
+.....
+.....
+..0..
+
+LWire
+lightred
+.....
+.....
+0....
+.....
+.....
+
+RWire
+lightred
+.....
+.....
+....0
+.....
+.....
+
+UWire
+lightred 
+..0..
+.....
+.....
+.....
+.....
+
 =======
 LEGEND
 =======
@@ -236,17 +275,17 @@ l = Laptop
 ┬ = WireD and WireR and WireL and Background and WireC
 ┴ = WireU and WireR and WireL and Background and WireC
 (  walls)
-━ = WireL and WireR and Brick 
-┃ = WireU and WireD and Brick 
-┏ = WireR and WireD and Brick 
-┓ = WireL and WireD and Brick 
-┗ = WireU and WireR and Brick 
-┛ = WireU and WireL and Brick 
-╋ = WireU and WireL and WireD and WireR and Brick 
-┣ = WireD and WireR and WireU and Brick 
-┫ = WireD and WireL and WireU and Brick 
-┳ = WireD and WireR and WireL and Brick 
-┻ = WireU and WireR and WireL and Brick 
+━ = LWire and RWire and Brick 
+┃ = UWire and DWire and Brick 
+┏ = RWire and DWire and Brick 
+┓ = LWire and DWire and Brick 
+┗ = UWire and RWire and Brick 
+┛ = UWire and LWire and Brick 
+╋ = UWire and LWire and DWire and RWire and Brick 
+┣ = UWire and RWire and UWire and Brick 
+┫ = DWire and LWire and UWire and Brick 
+┳ = DWire and RWire and LWire and Brick 
+┻ = UWire and RWire and LWire and Brick 
 
 
 
@@ -269,6 +308,11 @@ Target, Plate, ActivePlate
 Programer, Laptop
 Player, Crate, Brick, Door, Pillar
 OverGrowth, BerryVinesA, BerryVinesB, BerryVinesC, BerryVinesD
+DWire
+LWire
+UWire
+RWire
+CWire
 
 ======
 RULES
@@ -299,15 +343,15 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
 ---------------
 -#############-
--#..G......*.#-
--#+.&......*.#-
--#*.#....***.G-
--#..###G##...#-
+-#..g......*.#-
+-#+─f......*.#-
+-#*.#....***.g-
+-#..###g##...#-
 -#..#....#...#-
 -#..#....##.##-
 -#.p#..o.....#-
 -#..#........#-
--#..#....G...#-
+-#..#....g...#-
 -#############-
 ---------------
 

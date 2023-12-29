@@ -275,17 +275,17 @@ l = Laptop
 ┬ = WireD and WireR and WireL and Background and WireC
 ┴ = WireU and WireR and WireL and Background and WireC
 (  walls)
-━ = LWire and RWire and Brick 
-┃ = UWire and DWire and Brick 
-┏ = RWire and DWire and Brick 
-┓ = LWire and DWire and Brick 
-┗ = UWire and RWire and Brick 
-┛ = UWire and LWire and Brick 
-╋ = UWire and LWire and DWire and RWire and Brick 
-┣ = UWire and RWire and UWire and Brick 
-┫ = DWire and LWire and UWire and Brick 
-┳ = DWire and RWire and LWire and Brick 
-┻ = UWire and RWire and LWire and Brick 
+━ = LWire and RWire and Brick and CWire
+┃ = UWire and DWire and Brick and CWire
+┏ = RWire and DWire and Brick and CWire
+┓ = LWire and DWire and Brick and CWire 
+┗ = UWire and RWire and Brick and CWire
+┛ = UWire and LWire and Brick and CWire
+╋ = UWire and LWire and DWire and RWire and Brick and CWire
+┣ = UWire and RWire and DWire and Brick and CWire
+┫ = DWire and LWire and UWire and Brick and CWire
+┳ = DWire and RWire and LWire and Brick and CWire
+┻ = UWire and RWire and LWire and Brick and CWire
 
 
 
@@ -368,13 +368,13 @@ MESSAGE placeholder
 
 #a#########b####
 bg++++.....#.*.#
-g##a##.bd#.#**.#
+g#┃┃┃┃.bd#.#**.#
 #offff..g..#*.*#
 bc##g#..#..#cg#d
-#a...c.....#.a*#
-##.*.#.#+#.g*#f#
-g#fff#.#+#.#.#.#
-c#...#.#+#.#f#.#
+#a...c..┌──━─┓*#
+##.*.#.#+#.g*┗f#
+g#fff━─━+#.#.#.#
+c#...#.#+━─━f#.#
 #g...a.#*#.#...#
 #a...g.....#...#
 gb..a##.p.###..g
@@ -385,18 +385,18 @@ MESSAGE This one can't code either...
 
 ----------------
 -##############-
--#.*..#.+..####-
--#*.**#....####-
--######....####-
--#..+####f#####-
--#...#....*####-
--#...f.....#..#-
--#***#..p..f.o#-
--#####.....#..#-
--####+.....####-
--#######f######-
+-#.*..#┌+..####-
+-#*.**#│...####-
+-######│...####-
+-#..+━━━━f#####-
+-#...#.│..*####-
+-#...f.│...#..#-
+-#***┃.│p..f.o#-
+-####┃.│...┃..#-
+-####+.└┐..┃###-
+-#######f##┃###-
 -#*..*#...#+..#-
--#*..*#+..f...#-
+-#*..*#+──f...#-
 -#**..#...#...#-
 -##############-
 ----------------

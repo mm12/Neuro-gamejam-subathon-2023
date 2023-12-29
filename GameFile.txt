@@ -79,6 +79,14 @@ darkred
 .0.0.
 .....
 
+ActivePlate
+red 
+.....
+.0.0.
+..0..
+.0.0.
+.....
+
 Crate
 #865 #975 
 00000
@@ -86,6 +94,7 @@ Crate
 01110
 01110
 00000
+
 
 Programer 
 pink white blue 
@@ -129,6 +138,8 @@ X = Programer and Target
 l = Laptop
 + = Background and Plate
 & = Background and OpenDoor
+~ = Player and OpenDoor
+` = ActivePlate
 
 =======
 SOUNDS
@@ -140,7 +151,7 @@ COLLISIONLAYERS
 
 Background
 Outside, OpenDoor
-Target, Plate
+Target, Plate, ActivePlate
 Programer, Laptop
 Player, Crate, Brick, Door
 OverGrowth, BerryVines
@@ -150,10 +161,12 @@ RULES
 ======
 
 [ > Player | Crate ] -> [ > Player | > Crate ]
-late [ Crate Plate | ... | Door ] -> [ Crate Plate | ... | Background OpenDoor ]
-[ Plate No Crate | ... | OpenDoor ] -> [ Plate | ... | Door ]
+[ ActivePlate No Crate ] -> [Plate]
+late [ Plate No Crate | ... | OpenDoor ] -> [ Plate | ... | Door ]
+late [ Crate Plate | ... | Door ] -> [ ActivePlate Crate | ... | Background OpenDoor ]
 [ Action Player | Crate ] -> [ < Player | < Crate ]
-[ Player Target ] -> [Player] Win
+[ Player Target ] -> [Player] Win 
+
 
 ==============
 WINCONDITIONS
@@ -163,6 +176,24 @@ WINCONDITIONS
 =======
 LEVELS
 =======
+
+---------------
+-#############-
+-#p..........#-
+-#.#.#+#.#.#*#-
+-#...........#-
+-#.#.#.#.#+#.#-
+-#...........#-
+-#.#.#.#.#.#.#-
+-#.*.........#-
+-#.#.#.#*#.#.#-
+-#...........#-
+-###*#d#.#d#d#-
+-#+..d...+.#o#-
+-#############-
+---------------
+
+
 MESSAGE CONTROLS: SPACE and X (action) to pull obstacles
 
 MESSAGE Nwero has lost Tutel. Help her find the one that can code!

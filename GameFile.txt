@@ -157,6 +157,40 @@ BerryVinesD
 .0..2
 .1...
 
+
+
+WireD
+#311
+.....
+.....
+..0..
+.....
+..0..
+
+WireL
+#311
+.....
+.....
+0.0..
+.....
+.....
+
+WireR
+#311
+.....
+.....
+..0.0
+.....
+.....
+
+WireU
+#311
+..0..
+.....
+..0..
+.....
+.....
+
 =======
 LEGEND
 =======
@@ -181,6 +215,17 @@ l = Laptop
 ~ = Player and OpenDoor
 ` = ActivePlate
 ! = Pillar
+─ = WireL and WireR and Background
+│ = WireU and WireD and Background
+┌ = WireR and WireD and Background
+┐ = WireL and WireD and Background
+└ = WireU and WireR and Background
+┘ = WireU and WireL and Background
+┼ = WireU and WireL and WireD and WireR and Background
+├ = WireD and WireR and WireU and Background
+┤ = WireD and WireL and WireU and Background
+┬ = WireD and WireR and WireL and Background
+┴ = WireU and WireR and WireL and Background
 
 =======
 SOUNDS
@@ -192,6 +237,10 @@ COLLISIONLAYERS
 
 Background
 Outside, OpenDoor
+WireD
+WireL
+WireU
+WireR
 Target, Plate, ActivePlate
 Programer, Laptop
 Player, Crate, Brick, Door, Pillar

@@ -204,7 +204,7 @@ RULES
 [ > Player | Crate ] -> [ > Player | > Crate ]
 [ ActivePlate No Crate ] -> [Plate]
 [ Plate Crate ] -> [ActivePlate Crate]
-[ Plate | ... | OpenDoor NO Player ] -> [ Plate | ... | Door ]
+[ Plate | ... | OpenDoor NO Player NO Crate] -> [ Plate | ... | Door ]
 [ Crate ActivePlate | ... | Door ] -> [ Crate ActivePlate | ... | Background OpenDoor ]
 [ Action Player | Crate ] -> [ < Player | < Crate ]
 [ Player Target ] -> [Player] Win 
@@ -219,11 +219,6 @@ WINCONDITIONS
 LEVELS
 =======
 
-.....
-.....
-.....
-.....
-.....
 
 MESSAGE CONTROLS: SPACE and X (action) to pull obstacles
 
@@ -245,16 +240,31 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
 MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
 
-
 #######.
 #o##..##
 #.*.*..#
 #....*p#
 ########
 
+
+MESSAGE placeholder
+
+#a#########b####
+bg++++.....#.*.#
+g##a##.bd#.#**.#
+#offff..g..#*.*#
+bc##g#..#..#cg#d
+#a...c.....#.a*#
+##.*.#.#+#.g*#f#
+g#fff#.#+#.#.#.#
+c#...#.#+#.#f#.#
+#g...a.#*#.#...#
+#a...g.....#...#
+gb..a##.p.###..g
+g#.............c
+#####b######agd#
+
 MESSAGE This one can't code either...
-
-
 
 ----------------
 -##############-
@@ -274,8 +284,6 @@ MESSAGE This one can't code either...
 -##############-
 ----------------
 
-
-
 -----
 -..p-
 -Xl.-
@@ -283,23 +291,21 @@ MESSAGE This one can't code either...
 
 message Ah yes. You take off the femboy's socks and take him with you.
 
+(
+ .___________CREDITS____________. 
+ .       CREATOR: Catt0s        . 
+ .       SPRITES: Lådan         . 
+ .  LORE & STORY: Lådan, Catt0s .
+ .  LEVEL DESIGN: Catt0s, Lådan . 
+ .          CODE: Catt0s        . 
+ .          HELP: Boop          . 
+ .
 
-MESSAGE Credits:       Creator: Catt0s  AmazingSprites: Lådan      Help: Boop
+)
+MESSAGE   .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Lådan, Catt0s . .  LEVEL DESIGN: Catt0s, Lådan .  .          CODE: Catt0s        .  .          HELP: Boop          .  .
 
-MESSAGE TEST
-
----------------
--#############-
--#p..........#-
--#.#.#+#.#.#*#-
--#...........#-
--#.#.#.#.#+#.#-
--#...........#-
--#.#.#.#.#.#.#-
--#.*.........#-
--#.#.#.#*#.#.#-
--#...........#-
--###*#f#.#f#f#-
--#+..f...+.#o#-
--#############-
----------------
+.....
+.....
+.....
+.....
+.....

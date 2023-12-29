@@ -103,6 +103,14 @@ black darkgray #555 #888
 .3331
 11112
 
+BerryVines
+#A02 #7D3 #4D6
+...1.
+..0..
+.12..
+2..10
+..1..
+
 =======
 LEGEND
 =======
@@ -111,6 +119,7 @@ LEGEND
 - = Outside
 # = Brick
 G = Brick and OverGrowth
+h = Brick and BerryVines
 P = Player
 * = Crate
 @ = Crate and Plate
@@ -134,7 +143,7 @@ Outside, OpenDoor
 Target, Plate
 Programer, Laptop
 Player, Crate, Brick, Door
-OverGrowth
+OverGrowth, BerryVines
 
 ======
 RULES

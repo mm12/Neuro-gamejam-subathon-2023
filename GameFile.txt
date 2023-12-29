@@ -5,7 +5,7 @@ zoomscreen 10x10
 run_rules_on_level_start
 debug
 verbose_logging
-
+norepeat_action
 
 ========
 OBJECTS

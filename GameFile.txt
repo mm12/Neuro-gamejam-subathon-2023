@@ -162,8 +162,9 @@ RULES
 
 [ > Player | Crate ] -> [ > Player | > Crate ]
 [ ActivePlate No Crate ] -> [Plate]
-late [ Plate No Crate | ... | OpenDoor ] -> [ Plate | ... | Door ]
-late [ Crate Plate | ... | Door ] -> [ ActivePlate Crate | ... | Background OpenDoor ]
+[ Plate Crate ] -> [ActivePlate Crate]
+[ Plate | ... | OpenDoor NO Player ] -> [ Plate | ... | Door ]
+[ Crate ActivePlate | ... | Door ] -> [ Crate ActivePlate | ... | Background OpenDoor ]
 [ Action Player | Crate ] -> [ < Player | < Crate ]
 [ Player Target ] -> [Player] Win 
 

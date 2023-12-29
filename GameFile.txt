@@ -1,7 +1,7 @@
 title Neuro and the lost Tutel
 author Catt0s, Lådan, Boop
 homepage https://jam23.catt0s.win/
-zoomscreen 10x10
+flickscreen 10x10
 run_rules_on_level_start
 debug
 verbose_logging
@@ -157,13 +157,19 @@ BerryVinesD
 .0..2
 .1...
 
-
+WireC
+#311
+.....
+.....
+..0..
+.....
+.....
 
 WireD
 #311
 .....
 .....
-..0..
+.....
 .....
 ..0..
 
@@ -171,7 +177,7 @@ WireL
 #311
 .....
 .....
-0.0..
+0....
 .....
 .....
 
@@ -179,7 +185,7 @@ WireR
 #311
 .....
 .....
-..0.0
+....0
 .....
 .....
 
@@ -187,7 +193,7 @@ WireU
 #311
 ..0..
 .....
-..0..
+.....
 .....
 .....
 
@@ -215,17 +221,34 @@ l = Laptop
 ~ = Player and OpenDoor
 ` = ActivePlate
 ! = Pillar
-─ = WireL and WireR and Background
-│ = WireU and WireD and Background
-┌ = WireR and WireD and Background
-┐ = WireL and WireD and Background
-└ = WireU and WireR and Background
-┘ = WireU and WireL and Background
-┼ = WireU and WireL and WireD and WireR and Background
-├ = WireD and WireR and WireU and Background
-┤ = WireD and WireL and WireU and Background
-┬ = WireD and WireR and WireL and Background
-┴ = WireU and WireR and WireL and Background
+
+( wires)
+(  background)
+─ = WireL and WireR and Background and WireC
+│ = WireU and WireD and Background and WireC
+┌ = WireR and WireD and Background and WireC
+┐ = WireL and WireD and Background and WireC
+└ = WireU and WireR and Background and WireC
+┘ = WireU and WireL and Background and WireC
+┼ = WireU and WireL and WireD and WireR and Background and WireC
+├ = WireD and WireR and WireU and Background and WireC
+┤ = WireD and WireL and WireU and Background and WireC
+┬ = WireD and WireR and WireL and Background and WireC
+┴ = WireU and WireR and WireL and Background and WireC
+(  walls)
+━ = WireL and WireR and Brick 
+┃ = WireU and WireD and Brick 
+┏ = WireR and WireD and Brick 
+┓ = WireL and WireD and Brick 
+┗ = WireU and WireR and Brick 
+┛ = WireU and WireL and Brick 
+╋ = WireU and WireL and WireD and WireR and Brick 
+┣ = WireD and WireR and WireU and Brick 
+┫ = WireD and WireL and WireU and Brick 
+┳ = WireD and WireR and WireL and Brick 
+┻ = WireU and WireR and WireL and Brick 
+
+
 
 =======
 SOUNDS
@@ -241,6 +264,7 @@ WireD
 WireL
 WireU
 WireR
+WireC
 Target, Plate, ActivePlate
 Programer, Laptop
 Player, Crate, Brick, Door, Pillar

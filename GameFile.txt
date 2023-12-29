@@ -1,5 +1,5 @@
 title Neuro and the lost Tutel
-author Catt0s, Laden, Boop
+author Catt0s, Lådan, Boop
 homepage https://jam23.catt0s.win/
 zoomscreen 10x10
 run_rules_on_level_start
@@ -44,10 +44,15 @@ Brick
 11101
 
 Door
-brown
+#975 #889 #99A #A02
+01110
+11211
+12321
+11211
+01110
 
 OpenDoor
-brown
+#975
 0...0
 .....
 .....
@@ -178,6 +183,26 @@ WINCONDITIONS
 LEVELS
 =======
 
+----------------
+-##############-
+-#.*..#.+..####-
+-#*.**#....####-
+-######....####-
+-#..+####d#####-
+-#...#....*####-
+-#...d.....#..#-
+-#***#..p..d.o#-
+-#####.....#..#-
+-####+.....####-
+-#######d######-
+-#*..*#...#+..#-
+-#*..*#+..d...#-
+-#**..#...#...#-
+-##############-
+----------------
+
+MESSAGE TEST
+
 ---------------
 -#############-
 -#p..........#-
@@ -232,4 +257,4 @@ MESSAGE This one can't code either...
 message Ah yes. You take off the femboy's socks and take him with you.
 
 
-MESSAGE Credits: Creator:Catt0s  AmazingSprites:Ladan      Help:Boop
+MESSAGE Credits:       Creator: Catt0s  AmazingSprites: Lådan      Help: Boop

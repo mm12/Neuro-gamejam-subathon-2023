@@ -43,6 +43,14 @@ Brick
 00000
 11101
 
+Pillar
+#889 #99A
+00000
+01110
+01110
+01110
+00000
+
 Door
 #975 #889 #99A #A02
 01110
@@ -117,13 +125,37 @@ black darkgray #555 #888
 .3331
 11112
 
-BerryVines
+BerryVinesA
 #A02 #7D3 #4D6
 ...1.
 ..0..
 .12..
 2..10
 ..1..
+
+BerryVinesB
+#A02 #7D3 #4D6
+.2...
+21..1
+..02.
+..1.2
+.2...
+
+BerryVinesC
+#A02 #7D3 #4D6
+...1.
+...2.
+..1.2
+.20..
+.....
+
+BerryVinesD
+#A02 #7D3 #4D6
+1.1..
+.10.2
+..21.
+.0..2
+.1...
 
 =======
 LEGEND
@@ -133,11 +165,14 @@ LEGEND
 - = Outside
 # = Brick
 G = Brick and OverGrowth
-h = Brick and BerryVines
+A = Brick and BerryVinesA
+B = Brick and BerryVinesB
+C = Brick and BerryVinesC
+D = Brick and BerryVinesD
 P = Player
 * = Crate
 @ = Crate and Plate
-d = Door
+f = Door
 O = Target
 X = Programer and Target
 l = Laptop
@@ -145,6 +180,7 @@ l = Laptop
 & = Background and OpenDoor
 ~ = Player and OpenDoor
 ` = ActivePlate
+! = Pillar
 
 =======
 SOUNDS
@@ -158,8 +194,8 @@ Background
 Outside, OpenDoor
 Target, Plate, ActivePlate
 Programer, Laptop
-Player, Crate, Brick, Door
-OverGrowth, BerryVines
+Player, Crate, Brick, Door, Pillar
+OverGrowth, BerryVinesA, BerryVinesB, BerryVinesC, BerryVinesD
 
 ======
 RULES
@@ -183,42 +219,11 @@ WINCONDITIONS
 LEVELS
 =======
 
-----------------
--##############-
--#.*..#.+..####-
--#*.**#....####-
--######....####-
--#..+####d#####-
--#...#....*####-
--#...d.....#..#-
--#***#..p..d.o#-
--#####.....#..#-
--####+.....####-
--#######d######-
--#*..*#...#+..#-
--#*..*#+..d...#-
--#**..#...#...#-
--##############-
-----------------
-
-MESSAGE TEST
-
----------------
--#############-
--#p..........#-
--#.#.#+#.#.#*#-
--#...........#-
--#.#.#.#.#+#.#-
--#...........#-
--#.#.#.#.#.#.#-
--#.*.........#-
--#.#.#.#*#.#.#-
--#...........#-
--###*#d#.#d#d#-
--#+..d...+.#o#-
--#############-
----------------
-
+.....
+.....
+.....
+.....
+.....
 
 MESSAGE CONTROLS: SPACE and X (action) to pull obstacles
 
@@ -249,6 +254,28 @@ MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tute
 
 MESSAGE This one can't code either...
 
+
+
+----------------
+-##############-
+-#.*..#.+..####-
+-#*.**#....####-
+-######....####-
+-#..+####f#####-
+-#...#....*####-
+-#...d.....#..#-
+-#***#..p..f.o#-
+-#####.....#..#-
+-####+.....####-
+-#######f######-
+-#*..*#...#+..#-
+-#*..*#+..f...#-
+-#**..#...#...#-
+-##############-
+----------------
+
+
+
 -----
 -..p-
 -Xl.-
@@ -258,3 +285,21 @@ message Ah yes. You take off the femboy's socks and take him with you.
 
 
 MESSAGE Credits:       Creator: Catt0s  AmazingSprites: Lådan      Help: Boop
+
+MESSAGE TEST
+
+---------------
+-#############-
+-#p..........#-
+-#.#.#+#.#.#*#-
+-#...........#-
+-#.#.#.#.#+#.#-
+-#...........#-
+-#.#.#.#.#.#.#-
+-#.*.........#-
+-#.#.#.#*#.#.#-
+-#...........#-
+-###*#f#.#f#f#-
+-#+..f...+.#o#-
+-#############-
+---------------

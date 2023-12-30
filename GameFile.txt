@@ -1,5 +1,5 @@
 title Neuro and the lost Tutel
-author Catt0s, Lådan, Boop
+author Catt0s, Lådan
 homepage https://jam23.catt0s.win/
 run_rules_on_level_start
 debug
@@ -10,7 +10,7 @@ norepeat_action
 OBJECTS
 ========
 
-Outside
+Indoor .
 #000 #214
 01000
 00010
@@ -18,7 +18,7 @@ Outside
 00100
 00001
 
-Background
+Ourdoor -
 #112 #121 
 00000
 00100
@@ -26,7 +26,7 @@ Background
 00100
 00000
 
-Target
+Target O
 green darkgreen lightgreen #0f0 pink blue white
 .....
 .....
@@ -34,7 +34,7 @@ green darkgreen lightgreen #0f0 pink blue white
 0002.
 1.1..
 
-Brick
+Brick #
 #889 #99A
 11101
 00000
@@ -42,7 +42,7 @@ Brick
 00000
 11101
 
-Pillar
+Pillar !
 #889 #99A
 00000
 01110
@@ -50,7 +50,7 @@ Pillar
 01110
 00000
 
-Door
+Door f
 #975 #889 #99A #A02
 01110
 11211
@@ -58,7 +58,7 @@ Door
 11211
 01110
 
-OpenDoor
+OpenDoor &
 #975
 0...0
 .....
@@ -75,7 +75,7 @@ OverGrowth
 .1.0.
 ...1.
 
-Player
+Player P
 #FEE #E35 #FE9 #B98 #4CC #9FF #6FF #6BE
 .333.
 17071
@@ -83,7 +83,7 @@ Player
 .242.
 .656.
 
-Plate
+Plate +
 darkred
 .....
 .0.0.
@@ -91,7 +91,7 @@ darkred
 .0.0.
 .....
 
-ActivePlate
+ActivePlate `
 red 
 .....
 .0.0.
@@ -99,7 +99,7 @@ red
 .0.0.
 .....
 
-Crate
+Crate *
 #865 #975 
 00000
 01110
@@ -116,7 +116,7 @@ pink white blue
 0.1..
 1.2..
 
-Laptop
+Laptop l
 black darkgray #555 #888
 ....1
 ....1
@@ -239,41 +239,28 @@ lightred
 =======
 LEGEND
 =======
-
-. = Background
-- = Outside
-# = Brick
 G = Brick and OverGrowth
 A = Brick and BerryVinesA
 B = Brick and BerryVinesB
 C = Brick and BerryVinesC
 D = Brick and BerryVinesD
-P = Player
-* = Crate
 @ = Crate and Plate
-f = Door
-O = Target
 X = Programer and Target
-l = Laptop
-+ = Background and Plate
-& = Background and OpenDoor
 ~ = Player and OpenDoor
-` = ActivePlate
-! = Pillar
 
 ( wires)
 (  background)
-─ = WireL and WireR and Background and WireC
-│ = WireU and WireD and Background and WireC
-┌ = WireR and WireD and Background and WireC
-┐ = WireL and WireD and Background and WireC
-└ = WireU and WireR and Background and WireC
-┘ = WireU and WireL and Background and WireC
-┼ = WireU and WireL and WireD and WireR and Background and WireC
-├ = WireD and WireR and WireU and Background and WireC
-┤ = WireD and WireL and WireU and Background and WireC
-┬ = WireD and WireR and WireL and Background and WireC
-┴ = WireU and WireR and WireL and WireC and Background
+─ = WireL and WireR and WireC
+│ = WireU and WireD and WireC
+┌ = WireR and WireD and WireC
+┐ = WireL and WireD and WireC
+└ = WireU and WireR and WireC
+┘ = WireU and WireL and WireC
+┼ = WireU and WireL and WireD and WireR and WireC
+├ = WireD and WireR and WireU and WireC
+┤ = WireD and WireL and WireU and WireC
+┬ = WireD and WireR and WireL and WireC
+┴ = WireU and WireR and WireL and WireC 
 (  walls)
 ━ = LWire and RWire and Brick and CWire
 ┃ = UWire and DWire and Brick and CWire
@@ -287,7 +274,9 @@ l = Laptop
 ┳ = DWire and RWire and LWire and Brick and CWire
 ┻ = UWire and RWire and LWire and Brick and CWire
 
-
+Background = Indoor or Ourdoor
+Obstacle = Brick or Pillar or Door
+Inputs = Plate or ActivePlate
 
 =======
 SOUNDS
@@ -300,13 +289,15 @@ Crate move 83722507
 sfx0 8701902
 sfx1 19113502
 CloseMessage 96808306
+sfx9 13537904 (kill tutel)
+sfx7 77312309
 
 ================
 COLLISIONLAYERS
 ================
 
 Background
-Outside, OpenDoor
+OpenDoor
 WireD
 WireL
 WireU
@@ -314,7 +305,7 @@ WireR
 WireC
 Target, Plate, ActivePlate
 Programer, Laptop
-Player, Crate, Brick, Door, Pillar
+Player, Crate, Obstacle
 OverGrowth, BerryVinesA, BerryVinesB, BerryVinesC, BerryVinesD
 DWire
 LWire
@@ -330,15 +321,15 @@ RULES
 [ ActivePlate No Crate ] -> [Plate] sfx1
 [ Plate Crate ] -> [ActivePlate Crate] sfx0
 [ Plate | ... | OpenDoor NO Player NO Crate] -> [ Plate | ... | Door ] 
-[ Crate ActivePlate | ... | Door ] -> [ Crate ActivePlate | ... | Background OpenDoor ] 
+[ Crate ActivePlate | ... | Door ] -> [ Crate ActivePlate | ... | OpenDoor ] 
 [ Action Player | Crate ] -> [ < Player | < Crate ]
 [ Player Target ] -> [Player] Win 
-
+[ Crate Target ] -> [ Crate ] restart sfx9 message Roadkill
+[ Action Player Laptop ] ->  checkpoint sfx7 
 
 ==============
 WINCONDITIONS
 ==============
-
 
 =======
 LEVELS
@@ -439,14 +430,19 @@ message Ah yes. You take off the femboy's socks and take him with you.
  .___________CREDITS____________. 
  .       CREATOR: Catt0s        . 
  .       SPRITES: Lådan         . 
- .  LORE & STORY: Lådan, Catt0s .
+ .  LORE & STORY: Lådan, Catt0s . 
  .  LEVEL DESIGN: Catt0s, Lådan . 
  .          CODE: Catt0s        . 
- .          HELP: Boop          . 
+ .              _               . 
+ .             HELP:            . 
+ .          Boop, Contrail      . 
+ .           FEEDBACK:          . 
+ . The_Shadow365, TRA, Nar Nar, . 
+ . Spe                          . 
  .
 
 )
-MESSAGE   .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Lådan, Catt0s .  .  LEVEL DESIGN: Catt0s, Lådan .  .          CODE: Catt0s        .  .          HELP: Boop          .  .
+MESSAGE  .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Lådan, Catt0s .  .  LEVEL DESIGN: Catt0s, Lådan .  .          CODE: Catt0s        .  .              _               .  .             HELP:            .  .          Boop, Contrail      .  .           FEEDBACK:          .  . The_Shadow365, TRA, Nar Nar, .  . Spe                          .  .                       .  .                        .  .
 
 .....
 .....

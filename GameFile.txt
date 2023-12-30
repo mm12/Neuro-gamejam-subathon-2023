@@ -124,6 +124,16 @@ pink white blue
 0.1..
 1.2..
 
+
+Socks s 
+pink white blue 
+1.2..
+0.1..
+1.2..
+0.1..
+.1.2.
+
+
 Laptop l
 black darkgray #555 #888
 ....1
@@ -260,7 +270,6 @@ Z = Eliv and Indoor
 * = Crate and Indoor
 & = OpenDoor and Indoor
 O = Target and Indoor
-s = Programer
 
 ( wires)
 (  background)
@@ -319,7 +328,7 @@ WireU
 WireR
 WireC
 Target, Plate, ActivePlate
-Programer, Laptop
+Programer, Laptop, Socks
 Player, Crate, Obstacle
 OverGrowth, BerryVinesA, BerryVinesB, BerryVinesC, BerryVinesD
 DWire
@@ -353,7 +362,7 @@ LEVELS
 =======
 
 
-MESSAGE CONTROLS: SPACE and X (action) to pull obstacles
+MESSAGE CONTROLS: SPACE or X (action) to pull obstacles
 
 MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
@@ -377,7 +386,7 @@ MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tute
 -#..###g##...#-
 -#..#....#...#-
 -#..#....##.##-
--#.p#..o.....#-
+-#.p#..o....l#-
 -#..#........#-
 -#..#....g...#-
 -#############-

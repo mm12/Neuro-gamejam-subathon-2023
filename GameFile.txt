@@ -260,6 +260,7 @@ Z = Eliv and Indoor
 * = Crate and Indoor
 & = OpenDoor and Indoor
 O = Target and Indoor
+s = Programer
 
 ( wires)
 (  background)
@@ -408,7 +409,7 @@ message "Thank you for getting me out!", the tutel says. "I saw a weird-looking 
 (Level 4: Intro to boxes through doors - box collector, reuse boxes)
 ----------------
 -##############-
--#.*..#┌+..####-
+-#.*s.#┌+..####-
 -#*.**#│...####-
 -######│...####-
 -#..+━━━━f#####-
@@ -419,12 +420,12 @@ message "Thank you for getting me out!", the tutel says. "I saw a weird-looking 
 -####+.└┐..┃###-
 -#######f##┃###-
 -#*..*#...#+..#-
--#*..*#+──f...#-
+-#*s.*#+──f...#-
 -#**..#...#...#-
 -##############-
 ----------------
 
-message "Wow! Huh? Your creator? I saw a turtle on copium! He said something about not being a furry and stubled over there."
+message "Wow! Huh? Your creator? I saw a turtle high on copium! He said something about not being a furry and stubled over there."
 
 (Level 5 - Loss)
 ---------------
@@ -449,7 +450,7 @@ MESSAGE "Yes! Freedom! My pattern-seeking brain was going crazy! I got trapped i
 (Level 6:  - Boxes through doors)
 
 #a#########b####
-bg++++.....#.*.#
+bg++++.....#.*s#
 g#┃┃┃┃.bd#.#**.#
 #offff..g..#*.*#
 bc##g#..#..#cg#d
@@ -496,10 +497,9 @@ Message "A tutel who can code? I might have seen it! A tutel went past complaini
 
 (Level 8: Shadow Intro) (hint: drag behind)
 ----------------
--.............--
--...#a#ga#g###--
--..gd#....#..#--
--.#d#a....f.*#--
+----#a#ga#g###--
+---gd#....#..#--
+--#d#a....f.*#--
 -g#d##....┃..#--
 -###g##f##┃###--
 -a...#.│.f│..#--
@@ -512,7 +512,7 @@ Message "A tutel who can code? I might have seen it! A tutel went past complaini
 -#d#g#########--
 ----------------
 
-Message Your sister, Eliv, helps you get to the next tutel. This one has its ear-holes coverer, asking if the clapping has stopped. It said it started when someone passed by and mentioned some kind of game about old libraries 
+Message Your sister, Eliv, helps you get to the next tutel. This one has ear plugs in, asking if the clapping has stopped. It said it started when someone passed by and mentioned some kind of game about old libraries 
 
 (Level 9: Shadow 2)
 ---------------
@@ -529,7 +529,7 @@ c.o.c...#..z..#
 #...f───━──+..#
 dgcg#c#g#######
 
-Message Eliv once again helps you get the tutel. The tutel says it just heard a british person walk past.  
+Message The tutel says it just heard a british person walk past. It tries to repeat what it says, but is hard to understand. Eliv helps translate using Abber methods. Apparently it said something about zero latency. 
 
 (Level 10: Shadow 3)
 ----------------
@@ -549,7 +549,7 @@ Message Eliv once again helps you get the tutel. The tutel says it just heard a 
 -ggb#g#d#b#g#a#-
 ----------------
 
-Message Eliv has one again helped you get to the tutel. The tutel says "I saw a very sleepy tutel go past!"
+Message The tutel says "I saw a very sleepy tutel go past!" - Only Ved could be that tired after ignoring a chat all day
 
 (Found the tutel)
 

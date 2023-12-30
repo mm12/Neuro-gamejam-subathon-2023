@@ -356,6 +356,16 @@ MESSAGE CONTROLS: SPACE and X (action) to pull obstacles
 
 MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
+(Level 0: Intro to moving - boxes only)
+
+#######.
+#o##..##
+#.*.*..#
+#....*p#
+########
+
+(Level 1: Intro to doors - door and boxes)
+
 ---------------
 -#############-
 -#..g......*.#-
@@ -372,50 +382,7 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
 MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
 
-#######.
-#o##..##
-#.*.*..#
-#....*p#
-########
-
-
-MESSAGE placeholder
-
-#a#########b####
-bg++++.....#.*.#
-g#┃┃┃┃.bd#.#**.#
-#offff..g..#*.*#
-bc##g#..#..#cg#d
-#a│││c..┌──━─┓*#
-#*│││#.#+#.g*┗f#
-g#fff━─━+#.#.#.#
-c#...#.#+━─━f#.#
-#g...a.#*#.#...#
-#a...g.....#...#
-gb..a##.p.###..g
-g#.............c
-#####b######agd#
-
-MESSAGE This one can't code either...
-
-----------------
--##############-
--#.*..#┌+..####-
--#*.**#│...####-
--######│...####-
--#..+━━━━f#####-
--#...#.│..*####-
--#...f.│...#..#-
--#***┃.│p..f.o#-
--####┃.│...┃..#-
--####+.└┐..┃###-
--#######f##┃###-
--#*..*#...#+..#-
--#*..*#+──f...#-
--#**..#...#...#-
--##############-
-----------------
-
+(Level 3: - Turnaround)
 ----------------------
 -#############--------
 -#...+......*#--------
@@ -434,6 +401,64 @@ MESSAGE This one can't code either...
 -----#############----
 ----------------------
 
+(Level 4: Intro to boxes through doors - box collector, reuse boxes)
+----------------
+-##############-
+-#.*..#┌+..####-
+-#*.**#│...####-
+-######│...####-
+-#..+━━━━f#####-
+-#...#.│..*####-
+-#...f.│...#..#-
+-#***┃.│p..f.o#-
+-####┃.│...┃..#-
+-####+.└┐..┃###-
+-#######f##┃###-
+-#*..*#...#+..#-
+-#*..*#+──f...#-
+-#**..#...#...#-
+-##############-
+----------------
+
+(Level 5 - Loss)
+---------------
+-##c#d###b##g#-
+-gp....+.....g-
+-b..!..┃.!...#-
+-#..!..┃.!.!.b-
+-#.─!..┃.!.!.c-
+-#+────╋────f#-
+-#.#dg#┃##c#*#-
+-#.....┃....!#-
+-#.!.!.┃.!...b-
+-c.!*!.┃.!...#-
+-#.!.!.f.!.!!g-
+-g+────━───fo#-
+-####b##g#####-
+---------------
+
+MESSAGE This one can't code either...
+
+
+(Level 6:  - Boxes through doors)
+
+#a#########b####
+bg++++.....#.*.#
+g#┃┃┃┃.bd#.#**.#
+#offff..g..#*.*#
+bc##g#..#..#cg#d
+#a│││c..┌──━─┓*#
+#*│││#.#+#.g*┗f#
+g#fff━─━+#.#.#.#
+c#...#.#+━─━f#.#
+#g...a.#*#.#...#
+#a...g.....#...#
+gb..a##.p.###..g
+g#.............c
+#####b######agd#
+
+
+(Level 7: - Rooms)
 ---------------------------
 ---d#----#d#####g#----#d---
 --g##d--###+....b##--gd##--
@@ -460,6 +485,8 @@ MESSAGE This one can't code either...
 -#######---#####---#######-
 ---------------------------
 
+
+(Level 8: Shadow)
 ---------------
 ----d#c#cgg####
 ---ag.*.*g###.#
@@ -473,6 +500,9 @@ c#ad#...#.+.│.#
 c.o.c...#..z..#
 #...f───━──+..#
 dgcg#c#g#######
+
+
+(Found the tutel)
 
 -----
 -..p-
@@ -498,6 +528,8 @@ message Ah yes. You take off the femboy's socks and take him with you.
 
 )
 MESSAGE  .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Lådan, Catt0s .  .  LEVEL DESIGN: Catt0s, Lådan .  .          CODE: Catt0s        .  .              _               .  .             HELP:            .  .          Boop, Contrail      .  .           FEEDBACK:          .  . The_Shadow365, TRA, Nar Nar, .  . Spe                          .  .                       .  .                        .  .
+
+(end screen)
 
 .....
 .P.Z.

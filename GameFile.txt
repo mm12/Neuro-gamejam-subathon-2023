@@ -364,6 +364,8 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 #....*p#
 ########
 
+MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
+
 (Level 1: Intro to doors - door and boxes)
 
 ---------------
@@ -380,7 +382,7 @@ MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 -#############-
 ---------------
 
-MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tutel soup is on the menu tonight.
+message "Who's over heard of a coding turtle? Let go of me!" the tutel says. Clearly it hasn't met your creator.  
 
 (Level 3: - Turnaround)
 ----------------------
@@ -401,6 +403,8 @@ MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tute
 -----#############----
 ----------------------
 
+message "Thank you for getting me out!", the tutel says. "I saw a weird-looking tortise go past a while ago, but he didn't say anything. Maybe he was muted?" 
+
 (Level 4: Intro to boxes through doors - box collector, reuse boxes)
 ----------------
 -##############-
@@ -420,6 +424,8 @@ MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tute
 -##############-
 ----------------
 
+message "Wow! Huh? Your creator? I saw a turtle on copium! He said something about not being a furry and stubled over there."
+
 (Level 5 - Loss)
 ---------------
 -##c#d###b##g#-
@@ -437,7 +443,7 @@ MESSAGE Good job! This one doesn't seem to be able to code, though. I guess tute
 -####b##g#####-
 ---------------
 
-MESSAGE This one can't code either...
+MESSAGE "Yes! Freedom! My pattern-seeking brain was going crazy! I got trapped in here by someone who was mumbling about crazy and messed up things."
 
 
 (Level 6:  - Boxes through doors)
@@ -457,6 +463,7 @@ gb..a##.p.###..g
 g#.............c
 #####b######agd#
 
+message "What kind of tech vtuber lets their stream die? It turned off and all my doors closed!"
 
 (Level 7: - Rooms)
 ---------------------------
@@ -485,8 +492,29 @@ g#.............c
 -#######---#####---#######-
 ---------------------------
 
+Message "A tutel who can code? I might have seen it! A tutel went past complaining about Github Copilot being down, saying it was impossible to code now" 
 
-(Level 8: Shadow)
+(Level 8: Shadow Intro) (hint: drag behind)
+----------------
+-.............--
+-...#a#ga#g###--
+-..gd#....#..#--
+-.#d#a....f.*#--
+-g#d##....┃..#--
+-###g##f##┃###--
+-a...#.│.f│..#--
+-#.o.#+│.┃│.p#--
+-#...f││.┃│..#--
+-g##a┃┃┃#┃┃###--
+-#aa.+┃+*++..#--
+-###..f.....z#--
+-dgg..#......#--
+-#d#g#########--
+----------------
+
+Message Your sister, Eliv, helps you get to the next tutel. This one has its ear-holes coverer, asking if the clapping has stopped. It said it started when someone passed by and mentioned some kind of game about old libraries 
+
+(Level 9: Shadow 2)
 ---------------
 ----d#c#cgg####
 ---ag.*.*g###.#
@@ -501,34 +529,53 @@ c.o.c...#..z..#
 #...f───━──+..#
 dgcg#c#g#######
 
+Message Eliv once again helps you get the tutel. The tutel says it just heard a british person walk past.  
+
+(Level 10: Shadow 3)
+----------------
+-b#gdb#gg######-
+-##a##.#..f.+p#-
+-bg#...#..┃.│.#-
+-#.....f..┃.│.#-
+-g.....┃.*┃.│.#-
+-#gfd#.┃##┃####-
+-a.│.b.│#*+z│##-
+-#o│.#+│#...│##-
+-b#┃##┃┃####fd#-
+-g.+..││##...g#-
+-#....┃┃#....a#-
+-#b...┃+....#g#-
+-a#d..f....#bg#-
+-ggb#g#d#b#g#a#-
+----------------
+
+Message Eliv has one again helped you get to the tutel. The tutel says "I saw a very sleepy tutel go past!"
 
 (Found the tutel)
 
 -----
--..p-
+-z.p-
 -Xl.-
 -----
 
-message Ah yes. You take off the femboy's socks and take him with you.
+message Ah yes. You take off the femboy's socks and take him with you. You ask about the cookies he owes you, but he ignores you. How mean! You time him out, and Eliv shocks him. 
 
 (
  .___________CREDITS____________. 
  .       CREATOR: Catt0s        . 
  .       SPRITES: Lådan         . 
- .  LORE & STORY: Lådan, Catt0s . 
- .  LEVEL DESIGN: Catt0s, Lådan . 
+ .  LORE & STORY: Catt0s, Lådan . 
+ .  LEVEL DESIGN: Lådan, Catt0s . 
  .          CODE: Catt0s        . 
- .              _               . 
+ . - - - - - - -  - - - - - - - . 
  .             HELP:            . 
- .          Boop, Contrail      . 
+ .        Contrail, Boop        . 
  .           FEEDBACK:          . 
  . The_Shadow365, TRA, Nar Nar, . 
- . Spe                          . 
- .
+ . Spe                          .  .
 
 )
-MESSAGE  .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Lådan, Catt0s .  .  LEVEL DESIGN: Catt0s, Lådan .  .          CODE: Catt0s        .  .              _               .  .             HELP:            .  .          Boop, Contrail      .  .           FEEDBACK:          .  . The_Shadow365, TRA, Nar Nar, .  . Spe                          .  .                       .  .                        .  .
-
+MESSAGE .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Catt0s, Lådan .  .  LEVEL DESIGN: Lådan, Catt0s .  .          CODE: Catt0s        .  . - - - - - - -  - - - - - - - .  .             HELP:            .  .        Contrail, Boop        .  .           FEEDBACK:          .  . The_Shadow365, TRA, Nar Nar, .  . Spe                          .  .
 (end screen)
 
 .....

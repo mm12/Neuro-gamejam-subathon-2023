@@ -125,8 +125,8 @@ pink white blue
 1.2..
 
 
-Socks s 
-pink white blue 
+Socks 
+pink white #5ad 
 1.2..
 0.1..
 1.2..
@@ -270,7 +270,7 @@ Z = Eliv and Indoor
 * = Crate and Indoor
 & = OpenDoor and Indoor
 O = Target and Indoor
-
+s = Socks and Indoor
 ( wires)
 (  background)
 ─ = WireL and WireR and WireC and Indoor
@@ -362,7 +362,21 @@ LEVELS
 =======
 
 
-MESSAGE CONTROLS: SPACE or X (action) to pull obstacles
+((PROMO)
+
+-c#ag####
+d#g####d#
+#do.#..#c
+c#..#.p*g
+#bs.!...#
+#g..f──+#
+b#c######
+
+Message PROMO LEVEL)
+
+(GAME)
+
+MESSAGE CONTROLS: SPACE or X (action) to pull obstacles or pick up tutels
 
 MESSAGE Nwero has lost Tutel. Help her find the one that can code!
 
@@ -592,6 +606,35 @@ MESSAGE .___________CREDITS____________.  .       CREATOR: Catt0s        .  .   
 .....
 ..X..
 .....
+
+((Extras))
+
+Message Extras: By Contrail
+------------
+-##########a
+-#offffff.#c
+-b#┃┃┃┃┃┃.#a
+--#``````.#-
+--#..*.!..#-
+--#.*.!.*.#-
+--d#*.*.*#g-
+--g#...p.#c-
+---#######--
+---#######--
+------------
+
+--------------
+--####--####--
+-##..####..##-
+-#.p.####**.#-
+-#...++++*..#-
+-##.*││┃│..##-
+--##.┃┃┃┃###--
+---#.ffffo##--
+---########---
+-----####-----
+------##------
+--------------
 
 
 (

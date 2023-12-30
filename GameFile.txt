@@ -10,7 +10,7 @@ norepeat_action
 OBJECTS
 ========
 
-Ourdoor .
+Ourdoor -
 #000 #214
 01000
 00010
@@ -18,7 +18,7 @@ Ourdoor .
 00100
 00001
 
-Indoor -
+Indoor .
 #112 #121 
 00000
 00100
@@ -26,7 +26,7 @@ Indoor -
 00100
 00000
 
-Target O
+Target 
 green darkgreen lightgreen #0f0 pink blue white
 .....
 .....
@@ -58,7 +58,7 @@ Door f
 11211
 01110
 
-OpenDoor &
+OpenDoor 
 #975
 0...0
 .....
@@ -75,10 +75,15 @@ OverGrowth
 .1.0.
 ...1.
 
-Eliv Z
-purple
+Eliv 
+#B98 #E55 #700 #322 #222 #111 #FEE
+.000.
+21612
+06660
+.323.
+.454.
 
-Nwero P
+Nwero 
 #FEE #E35 #FE9 #B98 #4CC #9FF #6FF #6BE
 .333.
 17071
@@ -86,7 +91,7 @@ Nwero P
 .242.
 .656.
 
-Plate +
+Plate 
 darkred
 .....
 .0.0.
@@ -102,7 +107,7 @@ red
 .0.0.
 .....
 
-Crate *
+Crate 
 #865 #975 
 00000
 01110
@@ -249,20 +254,26 @@ C = Brick and BerryVinesC
 D = Brick and BerryVinesD
 @ = Crate and Plate
 X = Programer and Target
+P = Nwero and Indoor
+Z = Eliv and Indoor
++ = Plate and Indoor
+* = Crate and Indoor
+& = OpenDoor and Indoor
+O = Target and Indoor
 
 ( wires)
 (  background)
-─ = WireL and WireR and WireC
-│ = WireU and WireD and WireC
-┌ = WireR and WireD and WireC
-┐ = WireL and WireD and WireC
-└ = WireU and WireR and WireC
-┘ = WireU and WireL and WireC
-┼ = WireU and WireL and WireD and WireR and WireC
-├ = WireD and WireR and WireU and WireC
-┤ = WireD and WireL and WireU and WireC
-┬ = WireD and WireR and WireL and WireC
-┴ = WireU and WireR and WireL and WireC 
+─ = WireL and WireR and WireC and Indoor
+│ = WireU and WireD and WireC and Indoor
+┌ = WireR and WireD and WireC and Indoor
+┐ = WireL and WireD and WireC and Indoor
+└ = WireU and WireR and WireC and Indoor
+┘ = WireU and WireL and WireC and Indoor
+┼ = WireU and WireL and WireD and WireR and WireC and Indoor
+├ = WireD and WireR and WireU and WireC and Indoor
+┤ = WireD and WireL and WireU and WireC and Indoor
+┬ = WireD and WireR and WireL and WireC and Indoor
+┴ = WireU and WireR and WireL and WireC and Indoor
 (  walls)
 ━ = LWire and RWire and Brick and CWire
 ┃ = UWire and DWire and Brick and CWire
@@ -323,8 +334,8 @@ RULES
 [ > Player | Crate ] -> [ > Player | > Crate ]
 [ ActivePlate No Crate ] -> [Plate] sfx1
 [ Plate Crate ] -> [ActivePlate Crate] sfx0
-[ Plate | ... | OpenDoor NO Player NO Crate] -> [ Plate | ... | Door ] 
-[ Crate ActivePlate | ... | Door ] -> [ Crate ActivePlate | ... | OpenDoor ] 
+[ Plate | ... | OpenDoor NO Player NO Crate] -> [ Plate  | ... | Door ] 
+[ Crate ActivePlate | ... | Door ] -> [ Crate ActivePlate | ... | OpenDoor Indoor] 
 [ Action Player | Crate ] -> [ < Player | < Crate ]
 [ Player Target ] -> [Player] Win 
 [ Crate Target ] -> [ Crate ] restart sfx9 message Roadkill

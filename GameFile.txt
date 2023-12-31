@@ -456,7 +456,7 @@ message "Wow! Huh? Your creator? I saw a turtle high on copium! He said somethin
 -gp....+.....g-
 -b..!..┃.!...#-
 -#..!..┃.!.!.b-
--#.─!..┃.!.!.c-
+-#..!..┃.!.!.c-
 -#+────╋────f#-
 -#.#dg#┃##c#*#-
 -#.....┃....!#-

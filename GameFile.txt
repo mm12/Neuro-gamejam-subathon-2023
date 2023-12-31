@@ -595,10 +595,10 @@ message Ah yes. You take off the femboy's socks and take him with you. You ask a
  .        Contrail, Boop        . 
  .           FEEDBACK:          . 
  . The_Shadow365, TRA, Nar Nar, . 
- . Spe                          .  .
+ . Spe, Gardalice               .  .
 
 )
-MESSAGE .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Catt0s, Lådan .  .  LEVEL DESIGN: Lådan, Catt0s .  .          CODE: Catt0s        .  . - - - - - - -  - - - - - - - .  .             HELP:            .  .        Contrail, Boop        .  .           FEEDBACK:          .  . The_Shadow365, TRA, Nar Nar, .  . Spe                          .  .
+MESSAGE .___________CREDITS____________.  .       CREATOR: Catt0s        .  .       SPRITES: Lådan         .  .  LORE & STORY: Catt0s, Lådan .  .  LEVEL DESIGN: Lådan, Catt0s .  .          CODE: Catt0s        .  . - - - - - - -  - - - - - - - .  .             HELP:            .  .        Contrail, Boop        .  .           FEEDBACK:          .  . The_Shadow365, TRA, Nar Nar, .  . Spe, Gardalice               .  .
 (end screen)
 
 .....

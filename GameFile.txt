@@ -516,7 +516,7 @@ message "What kind of tech vtuber lets their stream die? It turned off and all m
 -#######---#####---#######-
 ---------------------------
 
-Message "A tutel who can code? I might have seen it! A tutel went past complaining about Github Copilot being down, saying it was impossible to code now" 
+Message "A tutel who can code? I might have seen it! A tutel went past complaining about Github Copilot being down, saying it was impossible to code now."
 
 (Level 8: Shadow Intro) (hint: drag behind)
 ----------------
@@ -535,7 +535,7 @@ Message "A tutel who can code? I might have seen it! A tutel went past complaini
 -#d#g#########--
 ----------------
 
-Message Your sister, Eliv, helps you get to the next tutel. This one has ear plugs in, asking if the clapping has stopped. It said it started when someone passed by and mentioned some kind of game about old libraries 
+Message Your sister, Eliv, helps you get to the next tutel. This one has ear plugs in, asking if the clapping has stopped. It said it started when someone passed by and mentioned some kind of game about old libraries.
 
 (Level 9: Shadow 2)
 ---------------
@@ -572,7 +572,7 @@ Message The tutel says it just heard a british person walk past. It tries to rep
 -ggb#g#d#b#g#a#-
 ----------------
 
-Message The tutel says "I saw a very sleepy tutel go past!" - Only Ved could be that tired after ignoring a chat all day
+Message The tutel says "I saw a very sleepy tutel go past!" - Only Ved could be that tired after ignoring a chat all day.
 
 (Found the tutel)
 
@@ -581,7 +581,7 @@ Message The tutel says "I saw a very sleepy tutel go past!" - Only Ved could be 
 -Xl.-
 -----
 
-message Ah yes. You take off the femboy's socks and take him with you. You ask about the cookies he owes you, but he ignores you. How mean! You time him out, and Eliv shocks him. 
+message Ah yes. You take off the femboy's socks and take him with you. You ask about the cookies he owes you, but he ignores you. How mean! You time him out, and Eliv shocks him. You are pechish.
 
 (
  .___________CREDITS____________. 

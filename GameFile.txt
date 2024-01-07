@@ -2,8 +2,6 @@ title Neuro and the lost Tutel
 author Catt0s, Lådan
 homepage https://jam23.catt0s.win/
 run_rules_on_level_start
-debug
-verbose_logging
 norepeat_action
 
 ========
@@ -134,7 +132,7 @@ pink white #5ad
 .1.2.
 
 
-Laptop l
+Laptop 
 black darkgray #555 #888
 ....1
 ....1
@@ -271,6 +269,7 @@ Z = Eliv and Indoor
 & = OpenDoor and Indoor
 O = Target and Indoor
 s = Socks and Indoor
+l = Laptop and Indoor
 ( wires)
 (  background)
 ─ = WireL and WireR and WireC and Indoor
